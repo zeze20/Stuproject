@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Countdown Timer</title>
+<link rel="stylesheet" href="../assets/style.css" />
+</head>
+<body>
+  <div class="app">
+    <a class="back-link" href="../index.html">← Tüm projeler</a>
+    <div class="badge">04</div>
+    <h1>Countdown Timer</h1>
+    <p class="subtitle">Bir süre gir, geri sayımı başlat.</p>
+
+    <div class="row">
+      <div>
+        <label for="minutes">Dakika</label>
+        <input type="number" id="minutes" min="0" value="0" />
+      </div>
+      <div>
+        <label for="seconds">Saniye</label>
+        <input type="number" id="seconds" min="0" max="59" value="30" />
+      </div>
+    </div>
+
+    <div class="clock-display" id="display">00:30</div>
+
+    <div class="row" style="margin-top: 1.25rem;">
+      <button class="btn-primary" id="startBtn" style="margin-top: 0;">Başlat</button>
+      <button class="btn-secondary" id="resetBtn">Sıfırla</button>
+    </div>
+
+    <p class="error" id="doneMsg"></p>
+
+    <footer class="page-footer">Python (CLI) versiyonu: <a href="countdown_timer.py">countdown_timer.py</a></footer>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

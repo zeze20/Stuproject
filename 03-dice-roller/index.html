@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Dice Roller</title>
+<link rel="stylesheet" href="../assets/style.css" />
+</head>
+<body>
+  <div class="app">
+    <a class="back-link" href="../index.html">← Tüm projeler</a>
+    <div class="badge">03</div>
+    <h1>Dice Roller</h1>
+    <p class="subtitle">Kaç zar atmak istediğini seç ve şansını dene.</p>
+
+    <label for="diceCount">Zar sayısı</label>
+    <input type="number" id="diceCount" min="1" max="12" value="2" />
+
+    <button class="btn-primary" id="rollBtn">🎲 Zar At</button>
+
+    <div class="result empty" id="result">Sonuç burada görünecek.</div>
+
+    <footer class="page-footer">Python (CLI) versiyonu: <a href="dice_roller.py">dice_roller.py</a></footer>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

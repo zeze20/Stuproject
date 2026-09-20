@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>BMI Calculator</title>
+<link rel="stylesheet" href="../assets/style.css" />
+</head>
+<body>
+  <div class="app">
+    <a class="back-link" href="../index.html">← Tüm projeler</a>
+    <div class="badge">12</div>
+    <h1>BMI Calculator</h1>
+    <p class="subtitle">Boy ve kilonu gir, vücut kitle indeksini öğren.</p>
+
+    <div class="row">
+      <div>
+        <label for="weight">Kilo (kg)</label>
+        <input type="number" id="weight" min="1" value="70" />
+      </div>
+      <div>
+        <label for="height">Boy (cm)</label>
+        <input type="number" id="height" min="1" value="170" />
+      </div>
+    </div>
+
+    <div class="result" id="result"></div>
+
+    <footer class="page-footer">Python (CLI) versiyonu: <a href="bmi_calculator.py">bmi_calculator.py</a></footer>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

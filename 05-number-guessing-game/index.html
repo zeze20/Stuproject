@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Number Guessing Game</title>
+<link rel="stylesheet" href="../assets/style.css" />
+</head>
+<body>
+  <div class="app">
+    <a class="back-link" href="../index.html">← Tüm projeler</a>
+    <div class="badge">05</div>
+    <h1>Number Guessing Game</h1>
+    <p class="subtitle">1 ile 100 arasında bir sayı tuttum, bul bakalım!</p>
+
+    <div class="row">
+      <input type="number" id="guessInput" placeholder="Tahminin (1-100)" />
+      <button class="btn-secondary" id="guessBtn" style="flex: 0 0 auto;">Tahmin Et</button>
+    </div>
+
+    <div class="result empty" id="result">Bir sayı gir ve tahmin et.</div>
+    <div class="score">
+      <span>Deneme: <span id="attempts">0</span></span>
+      <button class="btn-ghost" id="newGameBtn">Yeni Oyun</button>
+    </div>
+
+    <footer class="page-footer">Python (CLI) versiyonu: <a href="number_guessing_game.py">number_guessing_game.py</a></footer>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Password Generator</title>
+<link rel="stylesheet" href="../assets/style.css" />
+</head>
+<body>
+  <div class="app">
+    <a class="back-link" href="../index.html">← Tüm projeler</a>
+    <div class="badge">13</div>
+    <h1>Password Generator</h1>
+    <p class="subtitle">Güçlü ve rastgele şifreler üret.</p>
+
+    <label for="length">Uzunluk: <span id="lengthLabel">16</span></label>
+    <input type="range" id="length" min="4" max="48" value="16" />
+
+    <div class="checkbox-row">
+      <input type="checkbox" id="useDigits" checked />
+      <label for="useDigits" style="margin: 0;">Rakam içersin</label>
+    </div>
+    <div class="checkbox-row">
+      <input type="checkbox" id="useSymbols" checked />
+      <label for="useSymbols" style="margin: 0;">Sembol içersin</label>
+    </div>
+
+    <button class="btn-primary" id="generateBtn">Şifre Üret</button>
+
+    <div class="result empty" id="result">Şifren burada görünecek.</div>
+    <button class="btn-secondary" id="copyBtn" style="width: 100%; margin-top: 0.6rem;">Kopyala</button>
+
+    <footer class="page-footer">Python (CLI) versiyonu: <a href="password_generator.py">password_generator.py</a></footer>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

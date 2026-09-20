@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Alarm Clock</title>
+<link rel="stylesheet" href="../assets/style.css" />
+</head>
+<body>
+  <div class="app">
+    <a class="back-link" href="../index.html">← Tüm projeler</a>
+    <div class="badge">15</div>
+    <h1>Alarm Clock</h1>
+    <p class="subtitle">Bir saat belirle, o saat geldiğinde uyarı al. (Bu sekme açık kalmalı.)</p>
+
+    <div class="clock-display" id="currentTime" style="font-size: 2.2rem; padding: 1.1rem;"></div>
+
+    <label for="alarmTime">Alarm saati</label>
+    <input type="time" id="alarmTime" step="1" />
+
+    <div class="row" style="margin-top: 1.25rem;">
+      <button class="btn-primary" id="setAlarmBtn" style="margin-top: 0;">Alarmı Kur</button>
+      <button class="btn-secondary" id="cancelAlarmBtn">İptal</button>
+    </div>
+
+    <div class="result empty" id="status">Alarm kurulmadı.</div>
+
+    <footer class="page-footer">Python (CLI) versiyonu: <a href="alarm_clock.py">alarm_clock.py</a></footer>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

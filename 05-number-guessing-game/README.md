@@ -7,3 +7,14 @@ Bilgisayarın tuttuğu sayıyı tahmin etme oyunu. 1-100 arasında rastgele bir 
 ```bash
 python3 number_guessing_game.py
 ```
+
+## Web arayüzü
+
+Bu proje için tarayıcıda çalışan güzel bir arayüz de var:
+
+```bash
+open 05-number-guessing-game/index.html   # macOS
+xdg-open 05-number-guessing-game/index.html   # Linux
+```
+
+Ya da dosyayı doğrudan tarayıcında açabilirsin.

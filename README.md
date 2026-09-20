@@ -1,6 +1,15 @@
 # Stuproject — 20 Python Projesi
 
-Öğrenmek, eğlenmek ve portfolyoya eklemek için 20 küçük Python projesi. Her proje kendi klasöründe, bağımsız çalışan bir script olarak yer alır.
+Öğrenmek, eğlenmek ve portfolyoya eklemek için 20 küçük Python projesi. Her proje kendi klasöründe, bağımsız çalışan bir CLI script'i **ve** tarayıcıda çalışan güzel bir web arayüzü (`index.html`) olarak yer alır.
+
+## Web arayüzü
+
+Tüm projelerin ortak, karanlık temalı bir arayüzü var. Tarayıcıda `index.html` dosyasını açarak (ya da basit bir HTTP sunucusuyla) hepsine göz atabilirsin:
+
+```bash
+python3 -m http.server 8000
+# sonra tarayıcıda http://localhost:8000 adresini aç
+```
 
 | # | Proje | Klasör |
 |---|-------|--------|

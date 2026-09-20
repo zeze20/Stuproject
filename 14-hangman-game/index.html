@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Hangman</title>
+<link rel="stylesheet" href="../assets/style.css" />
+</head>
+<body>
+  <div class="app">
+    <a class="back-link" href="../index.html">← Tüm projeler</a>
+    <div class="badge">14</div>
+    <h1>Hangman</h1>
+    <p class="subtitle">Harf harf tahmin ederek kelimeyi bul.</p>
+
+    <div class="hangman-word" id="wordDisplay"></div>
+    <p style="text-align: center; color: var(--text-dim); font-size: 0.85rem;">
+      Kalan hak: <span id="attemptsLeft">6</span>
+    </p>
+
+    <div class="keyboard" id="keyboard"></div>
+
+    <div class="result empty" id="result" style="margin-top: 1rem;">Bir harf seç.</div>
+    <button class="btn-secondary" id="newWordBtn" style="width: 100%; margin-top: 0.75rem;">Yeni Kelime</button>
+
+    <footer class="page-footer">Python (CLI) versiyonu: <a href="hangman.py">hangman.py</a></footer>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

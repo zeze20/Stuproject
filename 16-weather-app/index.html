@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Weather App</title>
+<link rel="stylesheet" href="../assets/style.css" />
+</head>
+<body>
+  <div class="app">
+    <a class="back-link" href="../index.html">← Tüm projeler</a>
+    <div class="badge">16</div>
+    <h1>Weather App</h1>
+    <p class="subtitle">OpenWeatherMap API ile hava durumu. API anahtarın tarayıcında saklanır, hiçbir sunucuya gönderilmez.</p>
+
+    <label for="apiKey">OpenWeatherMap API Anahtarı</label>
+    <input type="password" id="apiKey" placeholder="API anahtarını yapıştır" />
+    <p class="hint">Ücretsiz anahtar: <a href="https://openweathermap.org/api" target="_blank" rel="noopener">openweathermap.org/api</a></p>
+
+    <label for="city">Şehir adı</label>
+    <input type="text" id="city" placeholder="örn. Istanbul" />
+
+    <button class="btn-primary" id="fetchBtn">Hava Durumunu Getir</button>
+
+    <div class="result empty" id="result">Sonuç burada görünecek.</div>
+    <p class="error" id="errorMsg"></p>
+
+    <footer class="page-footer">Python (CLI) versiyonu: <a href="weather_app.py">weather_app.py</a></footer>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

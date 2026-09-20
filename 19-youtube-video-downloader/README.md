@@ -17,3 +17,14 @@ python3 youtube_downloader.py
 ```
 
 Videolar `downloads/` klasörüne indirilir.
+
+## Web arayüzü
+
+Bu proje için tarayıcıda çalışan güzel bir arayüz de var:
+
+```bash
+open 19-youtube-video-downloader/index.html   # macOS
+xdg-open 19-youtube-video-downloader/index.html   # Linux
+```
+
+Ya da dosyayı doğrudan tarayıcında açabilirsin.

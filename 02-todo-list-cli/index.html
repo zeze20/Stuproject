@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>To-Do List</title>
+<link rel="stylesheet" href="../assets/style.css" />
+</head>
+<body>
+  <div class="app">
+    <a class="back-link" href="../index.html">← Tüm projeler</a>
+    <div class="badge">02</div>
+    <h1>To-Do List</h1>
+    <p class="subtitle">Görevlerini ekle, tamamla ve sil. Liste tarayıcında (localStorage) saklanır.</p>
+
+    <div class="row">
+      <input type="text" id="todoInput" placeholder="Yeni görev..." />
+      <button class="btn-secondary" id="addBtn" style="flex: 0 0 auto;">Ekle</button>
+    </div>
+
+    <ul class="list" id="todoList"></ul>
+    <p class="hint" id="emptyHint">Henüz görev yok.</p>
+
+    <footer class="page-footer">Python (CLI) versiyonu: <a href="todo.py">todo.py</a></footer>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

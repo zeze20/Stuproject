@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Currency Converter</title>
+<link rel="stylesheet" href="../assets/style.css" />
+</head>
+<body>
+  <div class="app">
+    <a class="back-link" href="../index.html">← Tüm projeler</a>
+    <div class="badge">09</div>
+    <h1>Currency Converter</h1>
+    <p class="subtitle">Sabit kur tablosu ile hızlı döviz çevirici.</p>
+
+    <label for="amount">Miktar</label>
+    <input type="number" id="amount" min="0" step="0.01" value="100" />
+
+    <div class="row">
+      <div>
+        <label for="fromCurrency">Kaynak</label>
+        <select id="fromCurrency"></select>
+      </div>
+      <div>
+        <label for="toCurrency">Hedef</label>
+        <select id="toCurrency"></select>
+      </div>
+    </div>
+
+    <div class="result" id="result"></div>
+    <p class="hint">Kurlar sabittir (offline). Güncel kur için script.js içindeki RATES tablosunu güncelleyin.</p>
+
+    <footer class="page-footer">Python (CLI) versiyonu: <a href="currency_converter.py">currency_converter.py</a></footer>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

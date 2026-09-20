@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>File Renamer Tool</title>
+<link rel="stylesheet" href="../assets/style.css" />
+</head>
+<body>
+  <div class="app wide">
+    <a class="back-link" href="../index.html">← Tüm projeler</a>
+    <div class="badge">18</div>
+    <h1>File Renamer Tool</h1>
+    <p class="subtitle">Bir klasör seç, dosya isimlerini toplu değiştir. (Chrome/Edge'de gerçek dosyalar üzerinde çalışır; File System Access API gerekir.)</p>
+
+    <button class="btn-secondary" id="pickFolderBtn">📁 Klasör Seç</button>
+    <p class="hint" id="folderName">Henüz klasör seçilmedi.</p>
+
+    <div class="row">
+      <div>
+        <label for="oldText">Değiştirilecek metin</label>
+        <input type="text" id="oldText" placeholder="örn. IMG" />
+      </div>
+      <div>
+        <label for="newText">Yeni metin</label>
+        <input type="text" id="newText" placeholder="örn. Tatil" />
+      </div>
+    </div>
+
+    <button class="btn-primary" id="previewBtn">Önizle</button>
+
+    <ul class="list" id="previewList"></ul>
+
+    <button class="btn-primary" id="renameBtn" style="display: none;">Yeniden Adlandırmayı Uygula</button>
+    <p class="error" id="errorMsg"></p>
+
+    <footer class="page-footer">Python (CLI) versiyonu: <a href="file_renamer.py">file_renamer.py</a></footer>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

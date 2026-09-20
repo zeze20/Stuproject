@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Mad Libs Generator</title>
+<link rel="stylesheet" href="../assets/style.css" />
+</head>
+<body>
+  <div class="app">
+    <a class="back-link" href="../index.html">← Tüm projeler</a>
+    <div class="badge">08</div>
+    <h1>Mad Libs Generator</h1>
+    <p class="subtitle">Kelimeleri gir, komik hikayeni oluştur.</p>
+
+    <label for="isim">Bir isim (özel isim)</label>
+    <input type="text" id="isim" placeholder="örn. Ahmet" />
+
+    <label for="hayvan">Bir hayvan</label>
+    <input type="text" id="hayvan" placeholder="örn. kedi" />
+
+    <label for="sifat">Bir sıfat</label>
+    <input type="text" id="sifat" placeholder="örn. şirin" />
+
+    <label for="fiil">Bir fiil (-mek/-mak)</label>
+    <input type="text" id="fiil" placeholder="örn. dans etmek" />
+
+    <label for="yer">Bir yer adı</label>
+    <input type="text" id="yer" placeholder="örn. park" />
+
+    <label for="sayi">Bir sayı</label>
+    <input type="text" id="sayi" placeholder="örn. 7" />
+
+    <label for="yiyecek">Bir yiyecek</label>
+    <input type="text" id="yiyecek" placeholder="örn. pizza" />
+
+    <button class="btn-primary" id="generateBtn">Hikaye Oluştur</button>
+
+    <div class="result empty" id="result">Hikayen burada görünecek.</div>
+
+    <footer class="page-footer">Python (CLI) versiyonu: <a href="mad_libs_generator.py">mad_libs_generator.py</a></footer>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

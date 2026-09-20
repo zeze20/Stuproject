@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Rock Paper Scissors</title>
+<link rel="stylesheet" href="../assets/style.css" />
+</head>
+<body>
+  <div class="app">
+    <a class="back-link" href="../index.html">← Tüm projeler</a>
+    <div class="badge">10</div>
+    <h1>Rock Paper Scissors</h1>
+    <p class="subtitle">Bilgisayara karşı taş kağıt makas oyna.</p>
+
+    <div class="choices">
+      <button class="choice-btn" data-choice="taş">🪨</button>
+      <button class="choice-btn" data-choice="kağıt">📄</button>
+      <button class="choice-btn" data-choice="makas">✂️</button>
+    </div>
+
+    <div class="result empty" id="result">Bir seçim yap.</div>
+    <div class="score">
+      <span>Oyuncu: <strong id="playerScore">0</strong></span>
+      <span>Bilgisayar: <strong id="computerScore">0</strong></span>
+    </div>
+
+    <footer class="page-footer">Python (CLI) versiyonu: <a href="rock_paper_scissors.py">rock_paper_scissors.py</a></footer>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
