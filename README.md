@@ -39,3 +39,7 @@ Her projeyi kendi klasörüne girip çalıştırabilirsiniz, örneğin:
 cd 01-calculator
 python3 calculator.py
 ```
+
+## Lisans
+
+Bu projeler öğrenim amaçlı hazırlanmıştır ve serbestçe kullanılabilir.
